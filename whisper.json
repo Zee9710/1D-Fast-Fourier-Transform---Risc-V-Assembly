@@ -1,0 +1,55 @@
+{
+  "xlen": 32,
+  "isa_string": "rv32gcv",
+  "enable_zfh": "true",
+  "enable_zba": "true",
+  "enable_zbb": "true",
+  "enable_zbs": "true",
+  "enable_v": "true",
+  "abi_names": "true",
+  "csr": {
+    "misa": {
+      "reset-comment": "imabfcv",
+      "reset": "0x40201126",
+      "mask": "0xffffffff",
+      "poke_mask": "0xffffffff"
+    },
+    "mstatus": {
+      "reset": "0x80006600",
+      "mask": "0xffffffff",
+      "poke_mask": "0xffffffff"
+    },
+    "vstart": {
+      "reset": "0x0",
+      "mask": "0xffffffff"
+    },
+    "vxsat": {
+      "reset": "0x0",
+      "mask": "0x1"
+    },
+    "vxrm": {
+      "reset": "0x0",
+      "mask": "0x3"
+    },
+    "vcsr": {
+      "reset": "0x0",
+      "mask": "0x7"
+    },
+    "vl": {
+      "reset": "0x0",
+      "mask": "0xffffffff"
+    },
+    "vtype": {
+      "reset": "0x0",
+      "mask": "0xffffffff"
+    }
+  },
+  "vector": {
+    "enable": "true",
+    "bytes_per_vec": 32,
+    "max_bytes_per_elem": 8,
+    "vlen": 256,
+    "elen": 64,
+    "slen": 256
+  }
+}
